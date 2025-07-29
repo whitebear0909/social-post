@@ -1,0 +1,43 @@
+{
+  "name": "social-post",
+  "version": "1.0.0",
+  "description": "A TypeScript project that detects and flags problematic content before posting to Twitter",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitebear0909/social-post.git"
+  },
+  "keywords": [
+    "twitter",
+    "content-moderation",
+    "social-media",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitebear0909/social-post/issues"
+  },
+  "homepage": "https://github.com/whitebear0909/social-post#readme",
+  "dependencies": {
+    "@types/node": "^24.1.0",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "ts-node": "^10.9.2",
+    "twitter-api-v2": "^1.24.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.0"
+  }
+}
